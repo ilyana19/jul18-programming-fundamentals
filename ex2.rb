@@ -129,12 +129,40 @@ countries = [
   }
 ]
 
+# excercise 7
+puts "\n"
+20.times do
+  puts "I will not skateboard in the halls"
+end
 
+message = Array.new(20, "I will not skateboard in the halls (array)")
+array_num = Array(1..5) #reduced to 1-5 for easier read
 
+sum = 0
+array_num.each do |n|
+  sum += n
+end
+puts sum
 
+tripple_array = []
+array_num.each do |num|
+  3.times do
+    tripple_array.push(num)
+  end
+end
+print "#{tripple_array} \n"
 
-
-
+not_island = []
+island_country = []
+countries.each do |country|
+  if country[:is_island] == false
+    not_island.push(country)
+  else
+    island_country.push(country)
+  end
+end
+puts "Not Island: #{not_island}"
+puts "Island: #{island_country}"
 
 
 
