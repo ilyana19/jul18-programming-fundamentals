@@ -1,7 +1,7 @@
 # Arrays
 fav_colours = ["blue", "orange", "purple"]
 age = [35, 31, 27, 16]
-flip_coins = ["heads", "tails", "heads", "tails", "heads"]
+flip_coins = ["heads", "tails", "heads", "tails", "tails"]
 artists = ["Arashi", "Kajiura Yuki", "Goose House"]
 colours = [:blue, :orange, :purple]
 
@@ -38,3 +38,19 @@ puts "Ages in order: #{age.sort}"
 puts "New family member: #{age.push(0).sort}"
 
 # exercise 2
+puts "Last favourite colour: #{fav_colours.last}"
+puts "Add North York to Cities: #{cities[:north_york] = 636000}"
+puts "Coin Flip reversed #{flip_coins = flip_coins.reverse}"
+puts "The City of #{cities.keys[0].to_s.capitalize} has a population of #{cities.values[0].to_i}."
+artists.each do |artist|
+  puts "I think #{artist} is great."
+end
+
+
+
+
+
+
+
+
+
