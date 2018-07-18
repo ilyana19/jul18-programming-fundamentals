@@ -72,3 +72,27 @@ puts "#{artists.pop} is no longer a favourite of mine."
 puts "My favourite artists: #{artists}."
 puts "The City of #{cities.keys[0].to_s.capitalize} now has a population of #{cities.values[0] = 200000}."
 
+# exercise 5
+puts "\n"
+total_population = 0
+cities.each do |key, value|
+  total_population += value
+end
+puts "The total population is: #{total_population}."
+
+friend_ages.each do |key, value|
+  if value > 25
+    puts "#{key.capitalize} is old."
+  else
+    puts "#{key.capitalize} is young."
+  end
+end
+
+puts "Last two favourite colours: #{fav_colours.last(2)}"
+
+# map changes each value in an array
+age.map do |age|
+  puts "They grew a year older: #{age += 1}"
+end
+
+puts "Adding new favourite colours: #{fav_colours.push("green", "yellow")}"
