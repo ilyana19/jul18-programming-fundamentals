@@ -1,7 +1,7 @@
 # Arrays
 fav_colours = ["blue", "orange", "purple"]
-age = [16, 27, 31, 35]
-coin_is_head = [true, false, true, false, true]
+age = [35, 31, 27, 16]
+flip_coins = ["heads", "tails", "heads", "tails", "heads"]
 artists = ["Arashi", "Kajiura Yuki", "Goose House"]
 colours = [:blue, :orange, :purple]
 
@@ -30,3 +30,11 @@ friend_ages = {
   emissary: 31,
   salaries: 21
 }
+
+# excercise 1
+puts "Coin results: #{flip_coins}"
+puts "First favourite colour: #{fav_colours[0]}"
+puts "Ages in order: #{age.sort}"
+puts "New family member: #{age.push(0).sort}"
+
+# exercise 2
