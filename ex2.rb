@@ -180,7 +180,3 @@ total_expenses = calc_expenses(expenses)
 total_expenses2 = calc_expenses(expenses2)
 puts "Expenses: #{total_expenses}"
 puts "Expenses2: #{total_expenses2}"
-
-
-
-
