@@ -46,9 +46,16 @@ artists.each do |artist|
   puts "I think #{artist} is great."
 end
 
-
-
-
+# exercise 3
+puts "Top two artists: #{artists[0..1]}"
+movies.each do |key, value|
+  puts "#{key} came out in #{value}."
+end
+puts "Family ages: #{age.sort.reverse}"
+movies[:"Beauty and the Beast"] = [1991, 2017]
+movies[:"Beauty and the Beast"].each do |value|
+  puts "Beauty and the Beast came out in #{value}."
+end
 
 
 
