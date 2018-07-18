@@ -164,7 +164,22 @@ end
 puts "Not Island: #{not_island}"
 puts "Island: #{island_country}"
 
+# exercise 8
+expenses = [250, 7.95, 30.95, 16.50]
+expenses2 = [5, 203.50, 20, 40.99]
 
+def calc_expenses(array)
+  sum_total = 0
+  array.each do |n|
+    sum_total += n
+  end
+  return sum_total
+end
+
+total_expenses = calc_expenses(expenses)
+total_expenses2 = calc_expenses(expenses2)
+puts "Expenses: #{total_expenses}"
+puts "Expenses2: #{total_expenses2}"
 
 
 
